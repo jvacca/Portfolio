@@ -1,0 +1,25 @@
+{
+  "name": "devTemplate",
+  "version": "0.0.0",
+  "description": "personal framework",
+  "main": "app.js",
+  "keywords": [
+    "framework"
+  ],
+  "authors": [
+    "John Vacca"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "angular": "~1.4.7",
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.7"
+  }
+}

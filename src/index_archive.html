@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="icon" href="../../favicon.ico">-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/appstyle.css">
+        <script src="js/lib/modernizr-2.8.3.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body ng-app="dashboard">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Digitas Health Digital Studio</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Usage</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <BR>
+      <div class="row">
+
+        
+        
+        <div class="col-sm-12 col-md-12 main" ng-controller="mainCtrl">
+          <h1 class="page-header">Dashboard</h1>
+        
+        <div class="chart-container">
+          <div id="label"></div>
+          <div id="gant-chart"></div>
+        </div>
+
+          <h2 class="sub-header">Project Status</h2>
+          <div class="table-responsive">
+            <table id='proj_list' class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Brand</th>
+                  <th>Project Name</th>
+                  <th>Status/Task</th>
+                  <th>Due Date</th>
+                  <th>Scope</th>
+                  <th>Assigned</th>
+                  <th>Hrs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="project in projects" class={{project.Type}}>
+                    <td>{{project.Brand}}</td>
+                    <td>{{project.Project_Name}}</td>
+                    <td>{{project.Status}}</td>
+                    <td>{{project.ask_due_date}}</td>
+                    <td>{{project.scope}}</td>
+                    <td>{{project.Assigned}}</td>
+                    <td>{{project.hrs}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/bootstrap.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
