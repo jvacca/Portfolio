@@ -20,6 +20,7 @@
     "underscore": "~1.8.3",
     "angular": "~1.4.7",
     "jquery": "~2.1.4",
+    "blast-text": "~2.0.0",
     "angular-route": "~1.4.7"
   }
 }

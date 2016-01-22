@@ -1,0 +1,8 @@
+{
+	"undef": true,
+	"devel": true,
+	"browser": true,
+	"browserify": true,
+	"es5": true,
+	"strict": true
+}

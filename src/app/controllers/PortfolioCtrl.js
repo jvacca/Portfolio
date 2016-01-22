@@ -1,6 +1,6 @@
 'use strict';
 
-var $ = require('jquery')
+var $ = require('jquery');
 
 module.exports = function($scope, projectService) {
 	
