@@ -13,7 +13,7 @@ module.exports = function($scope, projectService) {
 		
 
 		$(function() {
-			console.dir("Main " + $scope.projects[0].Brand);
+			console.dir("MainController initialized now!");
 			initializeApp();
 		});
 
