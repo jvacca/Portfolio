@@ -5,7 +5,7 @@ global.TMP_FOLDER = './tmp';
 
 global.config = {
 	src: {
-    index: SRC_FOLDER + '/index.html',
+    index: SRC_FOLDER + '/labs.html',
     styles: SRC_FOLDER + '/css/**/*.scss',
     scripts: SRC_FOLDER + '/app/**/*.js',
 		images: SRC_FOLDER + '/images/**/*',
@@ -13,7 +13,7 @@ global.config = {
 	},
   dest: {
     build: {
-      index: BUILD_FOLDER + '/index.html',
+      index: BUILD_FOLDER + '/labs.html',
       styles: BUILD_FOLDER + '/css/',
       scripts: BUILD_FOLDER + '/js/',
       images: BUILD_FOLDER + '/images/',
@@ -21,7 +21,7 @@ global.config = {
       appstyle: 'appstyle.css'
     },
     release: {
-      index: RELEASE_FOLDER + '/index.html',
+      index: RELEASE_FOLDER + '/labs.html',
       styles: RELEASE_FOLDER + '/css/',
       scripts: RELEASE_FOLDER + '/js/',
       images: RELEASE_FOLDER + '/images/',

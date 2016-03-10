@@ -10,7 +10,7 @@ var app;
 
 app = angular.module('portfolio', ['ngRoute']);
 
-console.log("Main initialized");
+//console.log("Main initialized");
 
 app.controller('mainCtrl', require('./controllers/MainCtrl'));
 //app.controller('PortfolioCtrl', require('./controllers/PortfolioCtrl'));

@@ -27,17 +27,17 @@ module.exports = function() {
         {
             label: "build",
             startDate: "10/19/15",
-            endDate: "10/22/15",
+            endDate: "10/22/15"
         },
         {
             label: "resizes",
             startDate: "10/24/15",
-            endDate: "10/29/15",
+            endDate: "10/29/15"
         },
         {
             label: "QA",
             startDate: "11/3/15",
-            endDate: "11/6/15",
+            endDate: "11/6/15"
         }
     ],
     "Estimate": 0

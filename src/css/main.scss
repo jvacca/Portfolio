@@ -32,6 +32,8 @@ a:hover {
     margin: 0;
     padding: 0;
     opacity: 0;
+    filter: alpha(opacity=0);
+    
 }
 
 .sidebar {
@@ -49,13 +51,11 @@ a:hover {
 .main {
     position: relative;
     width: 1024px;
-    height: 368px;
+    height: 567px;
     margin: 20px auto;
     padding: 0;
     color: #FFF;
     text-align: center;
-    border-left: 1px solid #999;
-    border-top: 1px solid #999;
     overflow: hidden;
 }
 
@@ -66,17 +66,21 @@ a:hover {
     width: 100%;
     padding: 20px 0 0 0;
     font-size: 14px;
+    line-height: 18px;
     opacity: 0;
+    filter: alpha(opacity=0);
+    
 }
 
 .intro-text h1 {
     font-size: 36px;
+    line-height: 40px;
 }
 
 .intro-text p {
     font-family: Arial, Helvetica;
     color: #999;
-    width: 50%;
+    width: 80%;
     margin: auto auto;
     padding-bottom: 20px;
     text-align: left;
@@ -95,20 +99,14 @@ a:hover {
 .screen {
     background: #333;
     opacity: 0.6;
+    filter: alpha(opacity=0.6);
 }
 
-.portfolio {
-    background: #333;
+/* IE fix */
+#portfolio, #about, #blog, #menuopen {
+    filter: alpha(opacity=0.6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
-
-.about {
-    background: #CCC;
-}
-
-
-
-
-
 
 
 /* side bar, header, foooter and id */
@@ -131,6 +129,8 @@ a:hover {
 .label {
     font-size: 12px;
     opacity: 0;
+    filter: alpha(opacity=0);
+    
 }
 
 .menu li {
@@ -167,12 +167,12 @@ a:hover {
 .social {
     float: left;
     display: block;
-    padding: 0 10px 0 20px;
-    font-size: 16px;
+    padding: 0 10px 0 5px;
+    font-size: 12px;
 }
 
 .flabel {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .mobile-menu {
@@ -188,7 +188,7 @@ a:hover {
 
 .mobile-menu li {
     float: left;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .mobile-menu .label {
@@ -198,57 +198,52 @@ a:hover {
 
 
 
-/*
-.social:hover {
-    border: 1px solid #CCCCCC;
+/* **************************   media queries ***************************** */
+
+/* desktop */
+@media only screen and (min-width: 769px) and (max-width: 1063px) {
+  .main {
+    width: 1024px;
+  }
+  .sidebar {
+    display: block;
+  }
+  .container {
+    width: 97%;
+  }
+  .mobile-menu {
+    display: none;
+  }
 }
-*/
 
 /*  tablets portrait  */
-
-@media only screen
-    and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
-    and (orientation: portrait) 
-    and (-webkit-min-device-pixel-ratio: 2) {
-    
-    .main {
-        width: 750px;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
 
-/*  tablets landscape  */
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .main {
-        width: 1024px;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-     .mobile-menu {
-        display: block;
-    }
+/*  smartphones portrait  */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .main {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
